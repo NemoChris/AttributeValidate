@@ -5,6 +5,7 @@ using System.Text;
 
 namespace AttributeValidate
 {
+    [AttributeUsage(AttributeTargets.Property)]
     public class RequiredAttribute : ValidateAttibute
     {
         public RequiredAttribute(string errorMessage) : base(errorMessage)

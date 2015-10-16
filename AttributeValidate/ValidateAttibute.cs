@@ -4,8 +4,7 @@ using System.Linq;
 using System.Text;
 
 namespace AttributeValidate
-{
-    [AttributeUsage(AttributeTargets.Property)]
+{    
     public abstract class ValidateAttibute:Attribute
     {
         /// <summary>
