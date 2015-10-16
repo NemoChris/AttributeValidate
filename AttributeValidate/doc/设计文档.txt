@@ -5,6 +5,12 @@
 				[AttributeUsage(AttributeTargets.Property)]
 			2、继承Attribute
 			3、添加属性和validate方法。
+				validate方法
+					判断属性的值是否为空。
+				属性
+					存储属性的值。
+					返回的错误消息。
+
 		> 给model类添加特性
 		> 给model类添加验证方法
 			反射取每个属性
