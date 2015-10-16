@@ -8,15 +8,10 @@ namespace AttributeValidate
     public abstract class ValidateAttibute:Attribute
     {
         // 当前验证的错误类型
-        public static ValidateCode ValErrorType
+        public  ValidateCode ErrorType
         {
             get;
-            private set;
-        }
-        // 静态初始化块
-        static ValidateAttibute()
-        {
-            ValErrorType = ValidateCode.RegexFailed;
+            protected set;
         }
         
         /// <summary>

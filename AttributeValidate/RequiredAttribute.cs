@@ -10,7 +10,7 @@ namespace AttributeValidate
     {
         public RequiredAttribute(string errorMessage) : base(errorMessage)
         {
-
+            this.ErrorType=ValidateCode.RequireFailed;
         }
 
         public override bool Validate()

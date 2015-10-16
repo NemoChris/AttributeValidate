@@ -7,8 +7,10 @@ namespace AttributeValidate
 {
     public abstract class BaseModel
     {
-        public virtual string Validate()
+        public virtual ValidateResult Validate()
         {
+            var result = new ValidateResult(){Code = ValidateCode.OK, IsSuc = true, ResultMessage = "验证成功"};
+
             // 反射取当前对象的所有属性
             System.Reflection.PropertyInfo[] properties = this.GetType().GetProperties();
             foreach (var pInfo in properties)
@@ -26,13 +28,16 @@ namespace AttributeValidate
                         attribute.InputValue = validateVal;
                         if (!attribute.Validate())
                         {
-                            return "验证失败！消息：" + attribute.ErrorMessage;
+                            result.ResultMessage="验证失败！消息：" + attribute.ErrorMessage;
+                            result.IsSuc = false;
+                            result.Code = attribute.ErrorType;
+                            return result;
                         }
                     }
                 }
             }
             // 验证成功
-            return "验证成功!";
+            return result;
         }
     }
 }
