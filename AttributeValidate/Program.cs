@@ -18,7 +18,10 @@ namespace AttributeValidate
                                UserName = userName
                            };
             var res= user.Validate();
-            
+            // 正常情况
+            user.UserName = "admin";
+            var res2 = user.Validate();
+
         }
     }
 }
