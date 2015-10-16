@@ -14,10 +14,10 @@ namespace AttributeValidate
             foreach (var pInfo in properties)
             {
                 // 取属性中的特性
-                if (pInfo.IsDefined(typeof(RequiredAttribute), false))
+                if (pInfo.IsDefined(typeof(ValidateAttibute),true))
                 {
                     var customAttributes =
-                        pInfo.GetCustomAttributes(typeof(RequiredAttribute), false) as RequiredAttribute[];
+                        pInfo.GetCustomAttributes(typeof(ValidateAttibute), true) as ValidateAttibute[];
                     // 根据特性进行参数验证
                     foreach (var attribute in customAttributes)
                     {
