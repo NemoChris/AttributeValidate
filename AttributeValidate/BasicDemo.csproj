@@ -48,6 +48,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RequiredAttribute.cs" />
     <Compile Include="User.cs" />
+    <Compile Include="ValidateAttibute.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="doc\设计文档.txt" />
