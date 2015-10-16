@@ -7,6 +7,18 @@ namespace AttributeValidate
 {    
     public abstract class ValidateAttibute:Attribute
     {
+        // 当前验证的错误类型
+        public static ValidateCode ValErrorType
+        {
+            get;
+            private set;
+        }
+        // 静态初始化块
+        static ValidateAttibute()
+        {
+            ValErrorType = ValidateCode.RegexFailed;
+        }
+        
         /// <summary>
         /// 验证失败返回的错误信息
         /// </summary>
@@ -30,7 +42,7 @@ namespace AttributeValidate
         /// </summary>
         /// <param name="errorMessage">验证失败返回的错误信息</param>
         public ValidateAttibute(string errorMessage)
-        {
+        {            
             this.ErrorMessage = errorMessage;
         }
 
