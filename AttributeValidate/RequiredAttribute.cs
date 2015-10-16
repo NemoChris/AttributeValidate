@@ -41,11 +41,7 @@ namespace AttributeValidate
         /// <returns></returns>
         public  bool Validate()
         {
-            if (InputValue == null || string.IsNullOrWhiteSpace(InputValue.ToString()))
-            {
-                return false;
-            }
-            return true;
+            return !string.IsNullOrEmpty(InputValue.ToString());
         }
 
     }
