@@ -7,11 +7,9 @@ namespace AttributeValidate.BLL
 {
     public class UserBll
     {
-        public static bool IsExixtUser(object userName)
+        public bool IsExixtUser(string fieldName,string value)
         {
-            // 模拟数据库数据
-            var userNameList=new List<string>(){"admin","hpy"};
-            return userNameList.Exists(u => u == userName.ToString());     
+            return false;
         }
     }
 }
