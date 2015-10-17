@@ -8,8 +8,8 @@ namespace AttributeValidate
     [AttributeUsage(AttributeTargets.Property)]
     public class ExistAttibute:ValidateAttibute
     {
-        public Func<bool> IsExistDataCallBack { get; set; }
-        public ExistAttibute(Func<bool> callBack,string errorMessage) : base(errorMessage)
+        public Func<object,bool> IsExistDataCallBack { get; set; }
+        public ExistAttibute(Func<object,bool> callBack,string errorMessage) : base(errorMessage)
         {
             this.IsExistDataCallBack = callBack;
             this.ErrorType=ValidateCode.ExistFailed;
