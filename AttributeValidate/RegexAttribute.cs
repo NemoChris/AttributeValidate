@@ -10,9 +10,10 @@ namespace AttributeValidate
     public class RegexAttribute:ValidateAttibute
     {
         public string RegexStr { get; set; }
-        public RegexAttribute(string errorMessage) : base(errorMessage)
+        public RegexAttribute(string regexStr,string errorMessage) : base(errorMessage)
         {
-this.ErrorType=ValidateCode.RegexFailed;
+            this.ErrorType=ValidateCode.RegexFailed;
+            this.RegexStr = regexStr;
         }
 
         public override bool Validate()
