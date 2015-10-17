@@ -9,5 +9,7 @@ namespace AttributeValidate
     {
         [Required("请输入用户名")]
         public string UserName { get; set; }
+        [Regex(@"^\d{5,10}$","请输入正确的qq号")]
+        public string QQ { get; set; }
     }
 }
