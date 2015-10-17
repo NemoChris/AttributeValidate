@@ -23,6 +23,10 @@ namespace AttributeValidate
         /// </summary>
         RegexFailed=102,
         /// <summary>
+        /// Exist特性验证失败
+        /// </summary>
+        ExistFailed=102,
+        /// <summary>
         /// 验证成功
         /// </summary>
         OK=200
