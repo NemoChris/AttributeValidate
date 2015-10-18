@@ -7,6 +7,10 @@ namespace AttributeValidate
 {
     public class User:BaseModel
     {
+        public static readonly string Conn = "Photo";
+        public static readonly string TableName = "User";
+        public static readonly string IdField = "Id";
+
         [Required("请输入用户名")]
         [Exist("UserName","用户名已存在")]
         public string UserName { get; set; }
