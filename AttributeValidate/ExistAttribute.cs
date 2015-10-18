@@ -25,14 +25,16 @@ namespace AttributeValidate
         }*/
 
         private string _FiledName=null;
-        public ExistAttribute(string filedName,string errorMessage) : base(errorMessage)
+        private string Conn { get; set; }
+        private string TableName { get; set; }
+        public ExistAttribute(string conn,string tableName,string filedName,string errorMessage) : base(errorMessage)
         {
             this._FiledName = filedName;
         }
 
         public override bool Validate()
         {
-            return new BLL.UserBll().IsExixtUser(this._FiledName, this.InputValue.ToString());
+            return new BLL.CommonBll().IsExixt(this.Conn,this.TableName,this._FiledName, this.InputValue.ToString());
         }
     }
 }
