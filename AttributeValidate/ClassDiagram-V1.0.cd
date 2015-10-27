@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="AttributeValidate.ExistAttribute" Collapsed="true">
+    <Position X="5.25" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAAAAAAABAEAAAAAAAAAAAAAAQAAAAA=</HashCode>
+      <FileName>ExistAttribute.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AttributeValidate.RegexAttribute" Collapsed="true">
+    <Position X="7" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>RegexAttribute.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AttributeValidate.RequiredAttribute" Collapsed="true">
+    <Position X="8.75" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>RequiredAttribute.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AttributeValidate.ValidateAttibute" Collapsed="true">
+    <Position X="7" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAACAAAAAAAAAAAAAAAACAAAAAAAAAAAAABA=</HashCode>
+      <FileName>ValidateAttibute.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AttributeValidate.BaseModel" Collapsed="true">
+    <Position X="2.5" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BaseModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AttributeValidate.User" Collapsed="true">
+    <Position X="2.5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAQAAAAAAAAAAQAAAAAACAAAAQEAAAAAAAA=</HashCode>
+      <FileName>User.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="微软雅黑" Size="9" />
+</ClassDiagram>
